@@ -28,6 +28,6 @@ before_install:
 script:
   - mkdir build
   - cd build
-  - CXX=/usr/bin/clang++-10 CC=/usr/bin/clang-10 cmake -DCMAKE_BUILD_TYPE=Debug -G "Ninja"..
+  - CXX=/usr/bin/clang++-10 CC=/usr/bin/clang-10 cmake -DCMAKE_BUILD_TYPE=Debug -G "Ninja" ..
   - cmake --build . -- -j10
   - ./webpptest
